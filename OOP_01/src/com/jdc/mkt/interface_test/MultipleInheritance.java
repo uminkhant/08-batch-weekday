@@ -3,7 +3,16 @@ package com.jdc.mkt.interface_test;
 public class MultipleInheritance {
 
 	public static void main(String[] args) {
+		 String message = "Hello";
 		
+		Human h = new Human() {		
+			@Override
+			public void doSomething() {
+				System.out.println(message);
+			}
+		};
+		//message = "Hi";
+		h.doSomething();
 	}
 }
 

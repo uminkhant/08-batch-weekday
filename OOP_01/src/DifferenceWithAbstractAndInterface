@@ -1,0 +1,10 @@
+						Abstract Class			Interface
+
+1. variable 			instance/static			static final
+2. abs method 			with abs keyword		don't need abs
+3. abs modifier			same level or upper		public
+4. return type			same level or lower		same level or lower
+5. constructor			can create 				can't create
+6. method				instance/static			static/default
+7. implement			use extends keyword		use implements
+8. multiple inherit		can't use				can use with comma
