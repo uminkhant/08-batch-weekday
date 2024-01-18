@@ -19,7 +19,7 @@ public class Main {
 		p.eat();
 		
 		Human h = new Teacher();
-		//h.doSomething();
+	//	h.doSomething();
 		
 	}
 	

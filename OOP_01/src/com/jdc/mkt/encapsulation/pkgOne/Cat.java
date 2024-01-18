@@ -1,6 +1,6 @@
 package com.jdc.mkt.encapsulation.pkgOne;
 
-public class Cat {
+public class Cat implements Feline{
 
 	String name;
 	int age;
@@ -16,6 +16,10 @@ public class Cat {
 	}
 	public void setAge(int age) {
 		this.age = age;
+	}
+	@Override
+	public void useNails() {
+		System.out.println("use nails");
 	}
 	
 	

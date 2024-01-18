@@ -1,8 +1,9 @@
 package com.jdc.mkt;
 
 public abstract class Person {
+	int a;
 
-	public abstract void doWork();
+	 abstract void doWork();
 	
 	void eat() {
 		System.out.println("Eat Foods");

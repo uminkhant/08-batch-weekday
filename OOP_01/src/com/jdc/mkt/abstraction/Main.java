@@ -1,5 +1,8 @@
 package com.jdc.mkt.abstraction;
 
+import com.jdc.mkt.interface_test.Messager;
+import com.jdc.mkt.interface_test.ViaMessage;
+
 public class Main {
 	
 	static Animal an;
@@ -9,6 +12,9 @@ public class Main {
 		s.setColor("Green");
 		s.show();
 		System.out.println("Area : "+ s.getArea()+"\t"+s.getColor());
+		
+		Messager m = new ViaMessage();
+		m.sendMessage();
 		
 		Shape s1 = new Shape() {
 			private String color;
