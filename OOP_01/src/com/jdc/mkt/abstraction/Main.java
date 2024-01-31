@@ -3,6 +3,7 @@ package com.jdc.mkt.abstraction;
 import com.jdc.mkt.interface_test.Messager;
 import com.jdc.mkt.interface_test.ViaMessage;
 
+@SuppressWarnings("unused")
 public class Main {
 	
 	static Animal an;
@@ -75,6 +76,7 @@ class Square extends Shape{
 	private static double height;
 		
 	public Shape() {}
+	@SuppressWarnings("static-access")
 	public Shape(double width,double height) {
 		this.width = width;
 		this.height = height;
