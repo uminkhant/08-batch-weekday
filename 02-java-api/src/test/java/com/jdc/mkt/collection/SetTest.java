@@ -8,6 +8,7 @@ import java.util.TreeSet;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
+@SuppressWarnings("unused")
 public class SetTest {
 
 	@Test

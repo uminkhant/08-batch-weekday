@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 public class QueueTest {
 
+	@SuppressWarnings("unused")
 	@Test
 	void test() {
 		Queue<String> q = new ArrayBlockingQueue<String>(3);
