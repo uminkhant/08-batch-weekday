@@ -33,6 +33,7 @@ public class TryCatchTest {
 		}
 	}
 
+	@SuppressWarnings("null")
 	@Test
 	@Disabled
 	void testTryMultiCatchOne() {
@@ -61,6 +62,7 @@ public class TryCatchTest {
 		
 	}
 	
+	@SuppressWarnings({ "null", "unused" })
 	@Test
 	void testTryMultiCatchTwo() {
 				

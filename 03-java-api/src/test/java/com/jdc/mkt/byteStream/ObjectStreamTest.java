@@ -1,7 +1,5 @@
 package com.jdc.mkt.byteStream;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
