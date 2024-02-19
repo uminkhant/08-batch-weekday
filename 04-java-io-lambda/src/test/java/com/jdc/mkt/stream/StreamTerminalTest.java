@@ -1,9 +1,6 @@
 package com.jdc.mkt.stream;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
-
 import java.util.List;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import org.junit.jupiter.api.Disabled;
