@@ -4,10 +4,12 @@ import java.io.File;
 import java.io.PrintWriter;
 
 public class Main {
+		
 
 	public static void main(String[] args) {
 		int i = setNumber("5p00");
 		System.out.println(i);
+		
 		
 	}
 	
