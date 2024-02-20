@@ -12,10 +12,36 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 
-public class DateTest {
+public class LegacyDateAndCalendarTest {
 	
 	@Test
-	void dateFormat() throws ParseException {
+	void formatExample() throws ParseException {
+		var df1 = new SimpleDateFormat("yyyy-MM-dd G 'at' HH:mm:ss z");
+		System.out.println(df1.parse("2001-07-04 AD at 12:08:56 PST"));
+		
+		var df2 = new SimpleDateFormat("yyyy-'W'ww-u");
+		System.out.println(df2.parse("2024-W08-2"));
+		
+		var df3 = new SimpleDateFormat("E ,M-d,''yy");		
+		System.out.println(df3.parse("Tue ,02-20,'24"));
+	}
+	
+	@Test
+	@Disabled
+	void dateFormatTest() throws ParseException {
+		var df1 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss SSS");
+		var c1 = Calendar.getInstance();
+		c1.setLenient(true);
+		c1.setTime(df1.parse("2020-01-21 25:20:20 900"));
+		System.out.println(c1.getTime());
+		
+		var df2 = new SimpleDateFormat("YYYY-MM-DD HH:mm:ss");
+		System.out.println(df2.parse("2020-01-21 25:20:20"));
+	}
+	
+	@Test
+	@Disabled
+	void dateFormatWithCalendar() throws ParseException {
 		var df = new SimpleDateFormat("dd:MM:yyyy");
 		var date = df.parse("02:02:2022");
 		Calendar c = Calendar.getInstance();
