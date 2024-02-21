@@ -4,6 +4,7 @@ import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.OffsetDateTime;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
@@ -20,11 +21,13 @@ public class LocalDateTimeTest {
 		
 		var instant1 = ZonedDateTime.of(ldt, ZoneId.of("GMT")).toInstant();
 		System.out.println("Instant time :" +instant1);
+		
 		var zone = instant1.atZone(ZoneId.of("GMT"));
 		System.out.println("Human time : "+zone.toLocalDateTime());
 		
-		var instant2 = ZonedDateTime.of(ldt, ZoneOffset.of("+06:30")).toInstant();
+		var instant2 = OffsetDateTime.of(ldt, ZoneOffset.of("+06:30")).toInstant();
 		System.out.println("Instant time :"+instant2);
+		
 		var offset = instant2.atOffset(ZoneOffset.of("+06:30"));
 		System.out.println("Human time :"+offset.toLocalDateTime());
 	}

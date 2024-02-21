@@ -89,6 +89,7 @@ public class LegacyDateAndCalendarTest {
 	@Disabled
 	void createDate() throws ParseException {
 		Date d1 = new Date();
+		
 		System.out.println(d1);
 		
 		Date d2 = new Date(9234239);
@@ -99,6 +100,7 @@ public class LegacyDateAndCalendarTest {
 		System.out.println(d3);
 		
 		Calendar c = Calendar.getInstance();
+		
 		System.out.println(c.getTime());
 	}
 }
