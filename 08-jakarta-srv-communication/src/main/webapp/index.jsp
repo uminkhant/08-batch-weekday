@@ -1,3 +1,4 @@
+<%@page import="com.jdc.mkt.entity.Person"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -12,5 +13,7 @@
 	<h3><a href="include">Include servlet</a></h3>
 	<h3><a href="forward">Forward servlet</a></h3>
 	<h3><a href="redirect">Redirect servlet</a></h3>
+	
+	
 </body>
 </html>

@@ -13,20 +13,11 @@ public class ToIncludeServlet extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
 	
-	private static final String HEADER = """
-			<!DOCTYPE html>
-				<html>
-				<head>
-				<meta charset="UTF-8">
-				<title>Insert title here</title>
-				</head>
-				<body>		
-			""";
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.getServletContext().getRequestDispatcher("/header").include(req, resp);
 		resp.getWriter()
-		.append(HEADER)
 		.append("<h3>")
 		.append("This is from toInclude servlet")
 		.append("</h3>")

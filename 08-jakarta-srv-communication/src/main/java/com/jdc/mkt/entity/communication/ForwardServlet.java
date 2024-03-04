@@ -15,6 +15,7 @@ public class ForwardServlet extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.setAttribute("message", "This is attribue message");
 		
 		req.getServletContext()
 		.getRequestDispatcher("/toForward")
