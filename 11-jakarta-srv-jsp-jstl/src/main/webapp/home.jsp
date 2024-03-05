@@ -4,7 +4,6 @@
 <%@page import="java.util.ArrayList"%>
 <jsp:include page="/commons/header.jsp"></jsp:include>
 
-
 <fieldset>
 	<legend class="text-primary">Insert Form </legend>
 	<form action="/user-save" class="form w-50" method="post">

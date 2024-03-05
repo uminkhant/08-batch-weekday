@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns = {"/user-save","/"},loadOnStartup = 1)
+@WebServlet(urlPatterns = {"/user-save","/user/jsp","user/el"},loadOnStartup = 1)
 public class UserServlet extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;
@@ -23,8 +23,18 @@ public class UserServlet extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		req.setAttribute("list", list);
-		req.getRequestDispatcher("/home.jsp").forward(req, resp);
+		switch(req.getServletPath()) {
+		case "/user/jsp":
+			req.setAttribute("list", list);
+			req.getRequestDispatcher("/home.jsp").forward(req, resp);
+			break;
+		case "/user/el":
+			req.getRequestDispatcher("/expression.jsp").forward(req, resp);
+			break;
+		default:			
+			break;
+		}
+		
 	}
 	
 	@Override
