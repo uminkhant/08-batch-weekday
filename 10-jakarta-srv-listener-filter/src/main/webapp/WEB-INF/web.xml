@@ -8,20 +8,39 @@
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 	<servlet>
-		<servlet-name>HelloServlet</servlet-name>
-		<servlet-class>com.jdc.mkt.HelloServlet</servlet-class>
+		<servlet-name>ListenerServlet</servlet-name>
+		<servlet-class>com.jdc.mkt.listener.ListenerServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>HelloServlet</servlet-name>
+		<servlet-name>ListenerServlet</servlet-name>
 		<url-pattern>/listener/add</url-pattern>
 		<url-pattern>/listener/replaced</url-pattern>
 		<url-pattern>/listener/removed</url-pattern>
 		<url-pattern>/filter/*</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>personsrv</servlet-name>
+		<servlet-class>com.jdc.mkt.filter.PersonServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>personsrv</servlet-name>
+		<url-pattern>/filter/add</url-pattern>
+	</servlet-mapping>
 	<listener>
-		<listener-class>com.jdc.mkt.ApplicationListener</listener-class>
+		<listener-class>com.jdc.mkt.listener.ApplicationServletListener</listener-class>
 	</listener>
 	<listener>
-		<listener-class>com.jdc.mkt.RequestListener</listener-class>
+		<listener-class>com.jdc.mkt.listener.RequestServletListener</listener-class>
 	</listener>
+	<listener>
+		<listener-class>com.jdc.mkt.listener.SessionServletListener</listener-class>
+	</listener>
+	<filter>
+		<filter-name>personfilter</filter-name>
+		<filter-class>com.jdc.mkt.filter.Filter_Servlet</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>personfilter</filter-name>
+		<url-pattern>/filter/*</url-pattern>
+	</filter-mapping>
 </web-app>

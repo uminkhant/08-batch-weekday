@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Successfully</title>
 <style>
-	.body {
+	.box {
 		padding: 2rem;
 	}
 	
@@ -16,7 +16,7 @@
 </style>
 </head>
 <body>
-	<div class="body">
+	<div class="box">
 		<h1 class="message"></h1>
 	</div>
 </body>

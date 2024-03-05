@@ -1,4 +1,4 @@
-package com.jdc.mkt;
+package com.jdc.mkt.listener;
 
 import jakarta.servlet.ServletContextAttributeEvent;
 import jakarta.servlet.ServletContextAttributeListener;

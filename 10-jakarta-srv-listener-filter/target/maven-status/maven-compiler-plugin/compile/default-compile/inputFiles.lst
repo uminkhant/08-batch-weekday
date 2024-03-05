@@ -1,3 +1,7 @@
-/Users/MKT/Documents/JDC WorkSpace/EclipseProjects/08-onestop-weekday/10-jakarta-srv-listener-filter/src/main/java/com/jdc/mkt/HelloServlet.java
-/Users/MKT/Documents/JDC WorkSpace/EclipseProjects/08-onestop-weekday/10-jakarta-srv-listener-filter/src/main/java/com/jdc/mkt/ApplicationListener.java
-/Users/MKT/Documents/JDC WorkSpace/EclipseProjects/08-onestop-weekday/10-jakarta-srv-listener-filter/src/main/java/com/jdc/mkt/RequestListener.java
+/Users/MKT/git/08-batch-weekday/10-jakarta-srv-listener-filter/src/main/java/com/jdc/mkt/listener/RequestServletListener.java
+/Users/MKT/git/08-batch-weekday/10-jakarta-srv-listener-filter/src/main/java/com/jdc/mkt/filter/Filter_Servlet.java
+/Users/MKT/git/08-batch-weekday/10-jakarta-srv-listener-filter/src/main/java/com/jdc/mkt/listener/ApplicationServletListener.java
+/Users/MKT/git/08-batch-weekday/10-jakarta-srv-listener-filter/src/main/java/com/jdc/mkt/listener/SessionServletListener.java
+/Users/MKT/git/08-batch-weekday/10-jakarta-srv-listener-filter/src/main/java/com/jdc/mkt/listener/ListenerServlet.java
+/Users/MKT/git/08-batch-weekday/10-jakarta-srv-listener-filter/src/main/java/com/jdc/mkt/Person.java
+/Users/MKT/git/08-batch-weekday/10-jakarta-srv-listener-filter/src/main/java/com/jdc/mkt/filter/PersonServlet.java
