@@ -19,7 +19,7 @@
 <c:url var="addStu" value="/student/add"></c:url>
 <c:url var="showStu" value="/student/show"></c:url>
 
-<nav class="navbar navbar-expand-md  bg-light">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
 	<div class="container-fluid">
 		<a href="${home }" class="navbar-brand">Home</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#students" aria-controls="students" aria-expanded= "false">
