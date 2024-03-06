@@ -14,6 +14,10 @@
 		body{
 			padding: 2rem;
 		}
+		a{
+			text-decoration: none;
+			color:blue;
+		}
 	</style>
 </head>
 <body>
