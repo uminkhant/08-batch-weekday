@@ -1,6 +1,6 @@
 
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page import="com.jdc.mkt.service.User"%>
+<%@page import="com.jdc.mkt.User"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 <jsp:include page="/commons/header.jsp"></jsp:include>

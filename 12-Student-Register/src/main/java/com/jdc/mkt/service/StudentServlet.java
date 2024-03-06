@@ -16,7 +16,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns = {
 		"/student/add",
 		"/student/show",
-		"/student/student-save"
+		"/student/post/student-save"
 })
 public class StudentServlet extends HttpServlet{
 

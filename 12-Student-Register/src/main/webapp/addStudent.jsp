@@ -2,7 +2,7 @@
 <jsp:include page="/commons/header.jsp"></jsp:include>
 
 
-<c:url var="studentSave" value="/student/student-save"></c:url>
+<c:url var="studentSave" value="/student/post/student-save"></c:url>
 <div class="container">
 <div class="row justify-content-center">
 
