@@ -27,15 +27,14 @@ public class UserServlet extends HttpServlet{
 	}
 	
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {	
 		
 		switch(req.getServletPath()) {
 		case "/user/jsp":
 			req.getRequestDispatcher("/home.jsp").forward(req, resp);
 			break;
 		case "/user/el":
-			list.clear();
+			list.clear();	
 			list.addAll(List.of( new User("aung aung","aung@gmail.com","ss"),new User("sithu","sithu@gmail.com","ssa")));		
 			req.setAttribute("users", list);	
 			req.getRequestDispatcher("/expression.jsp").forward(req, resp);
@@ -55,12 +54,12 @@ public class UserServlet extends HttpServlet{
 		var name = req.getParameter("name");
 		var email = req.getParameter("email");
 		var pass = req.getParameter("pass");
-		
+		var form = req.getParameter("formName");		
 		var user = new User(name,email,pass);
 		list.add(user);
 		req.setAttribute("users", list);
 		
-		req.getRequestDispatcher("/usejstl.jsp").forward(req, resp);
+		req.getRequestDispatcher(form.equals("jsp")?"/home.jsp":"/usejstl.jsp").forward(req, resp);
 	}
 
 }

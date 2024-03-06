@@ -1,12 +1,17 @@
 
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="com.jdc.mkt.User"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 <jsp:include page="/commons/header.jsp"></jsp:include>
 
+<c:url var="save" value="/user/save">
+	<c:param name="formName" value="jsp"></c:param>
+</c:url>
+
 <fieldset>
-	<legend class="text-primary">Insert Form </legend>
-	<form action="/user-save" class="form w-50" method="post">
+	<legend class="text-primary">JSP Insert Form </legend>
+	<form action="${save }" class="form w-50" method="post">
 		<div class="form-group">
 			<label for="" class="text-secondary">User name:</label> <input
 				type="text" class="form-control" name="name" />
@@ -24,8 +29,8 @@
 </fieldset>
 
 <%
-List<User> list = (List<User>) request.getAttribute("list");
-if (!list.isEmpty() && null != list) {
+List<User> list = (List<User>) request.getAttribute("users");
+if ( null != list && !list.isEmpty()) {
 %>
 <table class="table">
 	<thead>

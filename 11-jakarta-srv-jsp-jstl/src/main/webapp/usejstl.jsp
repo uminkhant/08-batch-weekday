@@ -7,9 +7,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <jsp:include page="/commons/header.jsp"></jsp:include>
 
-<c:url var="save" value="/user/save"></c:url>
+<c:url var="save" value="/user/save">
+	<c:param name="formName" value="jstl"></c:param>
+</c:url>
 <fieldset>
-	<legend class="text-primary">Insert Form </legend>
+	<legend class="text-primary"> JSTL Insert Form </legend>
 	<form action="${save }" class="form w-50" method="post">
 		<div class="form-group">
 			<label for="" class="text-secondary">User name:</label> <input

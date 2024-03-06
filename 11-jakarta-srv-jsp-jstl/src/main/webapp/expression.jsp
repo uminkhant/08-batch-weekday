@@ -32,7 +32,7 @@
 		<h3 class = "text-success">Show elements from array</h3>
 		<ul>
 			<c:forEach items="${users }" var="user" varStatus="n">
-				<li>${n.index+1}. <c:out value="${user.name }"></c:out></li>
+				<li>${n.index+1}.Name :${user.name } email :${user.email }</li>
 			</c:forEach>
 			
 		</ul>
